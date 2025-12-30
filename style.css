@@ -1,0 +1,618 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1500px;
+    /* outline: solid red 1px; */
+    margin: 0 auto;
+}
+
+.hatInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.backHeader {
+    background-color: #f5f7fa;
+
+}
+
+.divNavig {
+    height: 70px;
+}
+
+.navigation {
+    width: 1500px;
+    height: 75px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.ulNav {
+    display: flex;
+    gap: 50px;
+}
+
+.ulNav li a {
+    color: #252525;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ulNav li a:hover {
+    color: rgb(73, 73, 73);
+}
+
+.backNav {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 100px;
+    /* outline: solid blue 1px; */
+}
+
+.introduction {
+    width: 100%;
+    background-image: url(photos/headerBack.png);
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: fit-content; */
+    height: 700px;
+    padding-bottom: 50px;
+    /* padding-inline: 50px; */
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    width: 800px;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.owingTochristmas {
+    background-color: rgb(226, 202, 65);
+    border: none;
+    padding: 50px;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    border-radius: 25px;
+    color: rgb(56, 59, 56);
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 5px rgb(189, 149, 20);
+}
+
+.owingTochristmas:hover {
+    background-color: rgb(233, 203, 32);
+    box-shadow: 2px 2px 5px rgb(184, 143, 9);
+    animation-name: hoverBtns;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .2s;
+}
+
+@keyframes hoverBtns {
+    0% {
+        box-shadow: 5px 5px 5px rgb(189, 149, 20);
+        background-color: rgb(226, 202, 65);
+    }
+
+    100% {
+        background-color: rgb(233, 203, 32);
+        box-shadow: 2px 2px 5px rgb(184, 143, 9)
+    }
+}
+
+.phoneToCall {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.phoneToCall:hover {
+    color: rgb(56, 56, 56);
+}
+
+.linkTg {
+    text-decoration: none;
+    color: rgb(27, 99, 255);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.infoFirst {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* padding-inline: 50px; */
+}
+
+.worldMeder {
+    width: 850px;
+    height: 600px;
+    background-image: url(photos/newBlack.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* outline: solid green 5px; */
+}
+
+.sellNewAndOld {
+    background-image: url(photos/whiteback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 600px;
+    position: relative;
+}
+
+.positionBuy {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+
+.buyGoldWorld {
+    width: 500px;
+    text-align: right;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    font-weight: 800;
+    line-height: 35px;
+    /* text-align: right; */
+    margin-right: 20px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.goldAndAurum {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: .7;
+    /* text-align: right; */
+    /* width: 100px; */
+    /* justify-content: right;
+    display: flex; */
+    /* flex-wrap: wrap; */
+    width: 300px;
+    text-align: right;
+
+    /* margin-top: 20px; */
+    margin-right: 20px;
+}
+
+.sellPosition {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sellEverything {
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.alwaysGoodMark {
+    font-weight: 700;
+    /* padding-top: 20px; */
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flexItem {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.flexItem p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.listGold {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.listGoldCatalog {
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    row-gap: 100px;
+}
+
+.listGold li {
+    width: 280px;
+    /* height: 600px; */
+    /* outline: solid blue 1px; */
+}
+
+.listGoldCatalog li {
+    width: 280px;
+    /* height: 600px; */
+    /* outline: solid blue 1px; */
+}
+
+.imgShowlist {
+    width: 100%;
+}
+
+.descriptionList {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.buyList {
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(233, 203, 32);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(172, 150, 25);
+    color: rgb(66, 66, 66);
+}
+
+.buyList:hover {
+    animation-name: buttonListAnim;
+    animation-timing-function: ease-in;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonListAnim {
+    0% {
+        background-color: rgb(233, 203, 32);
+        box-shadow: 2px 2px 4px rgb(172, 150, 25);
+        color: rgb(66, 66, 66);
+    }
+
+    100% {
+        background-color: rgb(201, 175, 28);
+        box-shadow: 2px 2px 4px rgb(136, 118, 20);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.newcollection {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.watchAll {
+    font-size: 30px;
+    font-weight: 600;
+    /* transform: translateX(-100%); */
+    /* margin-top: 70px; */
+    /* margin-bottom: 70px; */
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    /* margin-left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: rgb(233, 203, 32);
+    box-shadow: 2px 2px 4px rgb(172, 150, 25);
+    color: rgb(66, 66, 66);
+}
+
+.watchAll:hover {
+    animation-name: watchAllBtn;
+    animation-timing-function: ease-in;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes watchAllBtn {
+    0% {
+        background-color: rgb(233, 203, 32);
+        box-shadow: 2px 2px 4px rgb(172, 150, 25);
+        /* color: rgb(66, 66, 66); */
+    }
+
+    100% {
+        background-color: rgb(243, 214, 50);
+        box-shadow: 2px 2px 4px rgb(153, 134, 26);
+        /* color: rgb(66, 66, 66); */
+    }
+}
+
+.watchCenter {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.blocksubscribeTelegram {
+    height: 550px;
+    background-image: url(photos/blackSection.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: relative;
+}
+
+.goldenBorder {
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    position: absolute;
+    /* border-color: red; */
+    height: 350px;
+    width: 500px;
+    outline: solid 3px rgb(196, 166, 1);
+    background-color: black;
+
+}
+
+.watchinfo {
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.subscribeToNotTolose {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 400;
+    padding-bottom: 40px;
+    background-color: black;
+}
+
+.linkChanel {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    outline: solid 3px white;
+    /* margin: 20px 0 0 0 ; */
+    padding: 15px 40px;
+    font-weight: 600;
+    /* margin: 0 auto; */
+    /* margin-left: 50%;
+    transform: translateY(-50%); */
+}
+
+.linkChanel:hover {
+    animation-name: linkChanelAnim;
+    animation-timing-function: ease-in-out;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkChanelAnim {
+    0% {
+        color: white;
+        background-color: black;
+        outline: solid 3px white;
+    }
+
+    50% {
+        outline: solid 3px black;
+        /* color: rgba(255, 255, 255, 0.534) */
+    }
+
+    100% {
+        color: black;
+        background-color: white;
+        outline: solid 3px white;
+    }
+}
+
+.infoAboutus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.infoAboutus article {
+    width: 450px;
+    height: 250px;
+    /* outline: solid red 1px; */
+}
+
+.firstinfo {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.secondinfo {
+    background-color: rgb(255, 221, 29);
+}
+
+.thirdInfo {
+    background-color: rgb(145, 145, 145);
+}
+
+/* .thirdInfo h3 {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+} */
+
+.infoLook {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    /* row-height: 20px; */
+}
+
+.paragraphLookk {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.paragraphLookk3 {
+    color: black;
+}
+
+.infoLook3 {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+
+.titleend {
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: 800;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.linksSocmedia {
+    font-size: 14px;
+    /* width: 50px;
+    height: 50px; */
+    padding: 20px 10px;
+    font-weight: 300;
+    background-color: #a8a8a8;
+    border-radius: 50%;
+}
+
+.listSocmedia {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.listFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.inforeturn {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.inforeturn li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(175, 149, 0);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.line {
+    /* width: 100%; */
+    height: 1px;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+}
+
+.ttSvg {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ttSvg use {
+    x: 10px;
+    y: 10px;
+    /* transform: translateX(-50%); */
+}
+
+/*  .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
