@@ -296,6 +296,10 @@ h1 {
 
 .listGold li {
     width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     /* height: 600px; */
     /* outline: solid blue 1px; */
 }
@@ -636,30 +640,33 @@ h1 {
 .deccriptionOrder {
     font-size: 35px;
     font-weight: 800;
-    position: absolute;
+    /* position: absolute;
     top: 173px;
-    left: 1100px;
+    left: 1100px; */
     text-transform: uppercase;
+    /* padding-left: 100px; */
+
 }
 
 .borderImg {
     width: 500px;
-    /* background-color: rgb(255, 255, 255); */
-    margin-top: -70px;
     height: 570px;
-    /* text-align: center; */
-    margin-left: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: solid 1px rgb(119, 119, 119);
     border-radius: 10px;
+    /* background-color: rgb(255, 255, 255); */
+    /* margin-top: -70px; */
+    /* text-align: center; */
+    /* margin-left: 300px; */
 }
 
 .valueLine {
-    position: absolute;
+    /* position: absolute;
     top: 275px;
-    left: 1100px;
+    left: 1100px; */
+    padding-top: 20px;
     width: 470px;
     display: flex;
     justify-content: space-between;
@@ -678,9 +685,10 @@ h1 {
 }
 
 .valueLine2 {
-    position: absolute;
+    /* position: absolute;
     top: 310px;
-    left: 1100px;
+    left: 1100px; */
+    padding-top: 10px;
     width: 470px;
     display: flex;
     justify-content: space-between;
@@ -700,9 +708,11 @@ h1 {
 .isPresent {
     font-size: 17px;
     font-weight: 400;
-    position: absolute;
-    top: 360px;
-    left: 1100px;
+    position: relative;
+    width: 122px;
+    /* top: 360px; */
+    /* left: 1100px; */
+    margin-top: 30px;
     letter-spacing: 1px;
 }
 
@@ -718,9 +728,10 @@ h1 {
 
 .buy {
     color: white;
-    position: absolute;
+    /* position: absolute;
     top: 420px;
-    left: 1100px;
+    left: 1100px; */
+    margin-top: 50px;
     border: none;
     border-radius: 5px;
     font-weight: 700;
@@ -735,17 +746,20 @@ h1 {
 
 .plusInfo {
     text-transform: uppercase;
-    position: absolute;
+    /* position: absolute;
     top: 550px;
-    left: 1250px;
+    left: 1250px; */
     font-weight: 800;
     letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .dopInfo {
-    position: absolute;
+    /* position: absolute;
     top: 700px;
-    left: 1100px;
+    left: 1100px; */
+    margin-top: 70px;
     width: 600px;
 }
 
@@ -881,7 +895,7 @@ h1 {
 }
 
 .anotherProduct {
-    margin-top: 400px;
+    margin-top: 1000px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -1014,21 +1028,55 @@ h1 {
 
 }
 
+.positionating {
+    position: absolute;
+    top: 180px;
+    left: 530px;
+    /* width: 100%; */
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.secondItem {
+    /* padding-left: px; */
+}
+
 /* .buy {
     
 } */
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -100%); */
     width: 800px;
     height: 600px;
     background-color: rgb(255, 255, 255);
     z-index: 2;
     box-shadow: 2px 2px 10px black;
     display: none;
+}
+
+.backDrop {
+    background-color: rgba(0, 0, 0, 0.247);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.helpInfo {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    width: 300px;
+    background-color: #cccccc;
+    font-size: 14px;
 }
 
 .modalHeader {
