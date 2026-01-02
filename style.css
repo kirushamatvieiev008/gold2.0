@@ -1072,11 +1072,12 @@ h1 {
 
 .helpInfo {
     position: absolute;
-    bottom: 100px;
-    right: 30px;
+    bottom: 60px;
+    right: 40px;
     width: 300px;
     background-color: #cccccc;
     font-size: 14px;
+    display: none;
 }
 
 .modalHeader {
