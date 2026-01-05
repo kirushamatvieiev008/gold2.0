@@ -548,7 +548,7 @@ const orderOnMain = `<header>
             <li class="aboutUs"><a href="#">про нас</a></li>
             <li class="prices"><a href="products.html">каталог</a></li>
             <li class="sales"><a href="#">акції</a></li>
-            <li class="contsctsNav"><a href="#">контакти</a></li>
+            <li class="contsctsNav"><a href="contacts.html">контакти</a></li>
           </ul>
           <!-- </div> -->
         </nav>
@@ -766,13 +766,13 @@ btnsOpenOrder.forEach((btn) => {
       <div class="backNav">
         <nav class="navigation">
           <!-- <div class="container"> -->
-          <img class="logoHeader" src="./photos/logo.png" alt="#" />
+          <img class="logoHeader" src="./photos/newLogoKashtan.jpeg" alt="#" />
           <ul class="ulNav">
             <li class="main"><a href="index.html">Головна</a></li>
             <li class="aboutUs"><a href="#">про нас</a></li>
-            <li class="prices"><a href="products.html">каталог</a></li>
-            <li class="sales"><a href="#">акції</a></li>
-            <li class="contsctsNav"><a href="#">контакти</a></li>
+            <li class="prices"><a href="./products.html">каталог</a></li>
+            <li class="sales"><a href="./buyPage.html">Продати золоті вироби</a></li>
+            <li class="contsctsNav"><a href="./contacts.html">контакти</a></li>
           </ul>
           <!-- </div> -->
         </nav>
@@ -810,27 +810,27 @@ btnsOpenOrder.forEach((btn) => {
               <h2 class="plusInfo">Додаткова інформація</h2>
               <ul class="dopInfo">
                 <li class="lisByuingPage1">
-                  <div class="parametr">Ціна покупки:</div>
+                  <div class="parametr newparametr1">Ціна покупки:</div>
                   <div>${catalog[btn.parentElement.id].totalPrice}</div>
                 </li>
                 <li class="lisByuingPage1">
-                  <div class="parametr">Ціна Продажу:</div>
+                  <div class="parametr newparametr2">Ціна Продажу:</div>
                   <div>${catalog[btn.parentElement.id].sellingPrice}</div>
                 </li>
                 <li class="lisByuingPage2">
-                  <div class="parametr">Маса:</div>
+                  <div class="parametr newparametr3">Маса:</div>
                   <div>${catalog[btn.parentElement.id].weight}</div>
                 </li>
                 <li class="lisByuingPage3">
-                  <div class="parametr">Метал:</div>
+                  <div class="parametr newparametr4">Метал:</div>
                   <div>${catalog[btn.parentElement.id].metal}</div>
                 </li>
                 <li class="lisByuingPage4">
-                  <div class="parametr">Країна:</div>
+                  <div class="parametr newparametr5">Країна:</div>
                   <div>${catalog[btn.parentElement.id].country}</div>
                 </li>
                 <li class="lisByuingPage5">
-                  <div class="parametr">Виробник:</div>
+                  <div class="parametr newparametr6">Виробник:</div>
                   <div>${catalog[btn.parentElement.id].mader}</div>
                 </li>
                 <li class="lisByuingPage6">
@@ -877,12 +877,12 @@ btnsOpenOrder.forEach((btn) => {
         </div>
         <div class="backDrop"></div>
         
-        <div class="IDProduct">Product ID:<span>${
+        <div class="IDProduct">Product ID:<span class="idNumbers">${
           catalog[btn.parentElement.id].idShow
         }</span></div>
         <h2 class="anotherProduct">Інші товари</h2>
         <ul class="onotherProductsList">
-          <li>
+          <li id="5">
             <img
               class="imgShowlistBuyPage"
               src="./photos/goldTry.jpg"
@@ -895,10 +895,10 @@ btnsOpenOrder.forEach((btn) => {
                 <p>Курс покупки</p>
                 <p>147.20 $ /г</p>
               </div>
-            <button class="buyList">Детальніше</button><br />
-            <button class="buyList">Купити</button>
+            <button class="buyListInside">Детальніше</button><br />
+            <button class="buyListInside">Купити</button>
           </li>
-          <li>
+          <li id="6">
             <img
             class="imgShowlistBuyPage"
             src="./photos/goldTry.jpg"
@@ -911,10 +911,10 @@ btnsOpenOrder.forEach((btn) => {
               <p>Курс покупки</p>
               <p>147.20 $ /г</p>
             </div>
-            <button class="buyList">Детальніше</button><br />
-            <button class="buyList">Купити</button>
+            <button class="buyListInside">Детальніше</button><br />
+            <button class="buyListInside">Купити</button>
           </li>
-          <li>
+          <li id="7">
             <img
             class="imgShowlistBuyPage"
             src="./photos/goldTry.jpg"
@@ -927,8 +927,8 @@ btnsOpenOrder.forEach((btn) => {
               <p>Курс покупки</p>
               <p>147.20 $ /г</p>
             </div>
-            <button class="buyList">Детальніше</button><br />
-            <button class="buyList">Купити</button>
+            <button class="buyListInside">Детальніше</button><br />
+            <button class="buyListInside">Купити</button>
           </li>
         </ul>
       </div>
@@ -979,8 +979,38 @@ btnsOpenOrder.forEach((btn) => {
         </ul>
       </div>
     </footer>`;
+
+    const buyListInside = document.querySelectorAll(".buyListInside");
+    const imgBuyPage = document.querySelector(".imgBuyPage");
+    const deccriptionOrder = document.querySelector(".deccriptionOrder");
+    const priceByuingPage = document.querySelector(".priceByuingPage");
+    const priceByuingPage2 = document.querySelector(".priceByuingPage2");
+    const newparametr1 = document.querySelector(".newparametr1");
+    const newparametr2 = document.querySelector(".newparametr2");
+    const newparametr3 = document.querySelector(".newparametr3");
+    const newparametr4 = document.querySelector(".newparametr4");
+    const newparametr5 = document.querySelector(".newparametr5");
+    const newparametr6 = document.querySelector(".newparametr6");
+    const idNumbers = document.querySelector(".idNumbers");
+
+    buyListInside.forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        const liparent = btn.parentElement.id;
+        imgBuyPage.source = `${catalog[liparent].photo}`;
+        deccriptionOrder.textContent = catalog[liparent].name;
+        priceByuingPage.textContent = catalog[liparent].buyIngPricePerGramm;
+        priceByuingPage2.textContent = catalog[liparent].sellingPerGramm;
+        newparametr1.textContent = catalog[liparent].totalPrice;
+        newparametr2.textContent = catalog[liparent].sellingPrice;
+        newparametr6.textContent = catalog[liparent].mader;
+        newparametr5.textContent = catalog[liparent].country;
+        newparametr4.textContent = catalog[liparent].metal;
+        newparametr3.textContent = catalog[liparent].weight;
+        idNumbers.textContent = catalog[liparent].idShow;
+      });
+    });
     // console.log(btn.parentElement.index);
-    
+
     const btnOpenModal = document.querySelector(".buy");
     const modal = document.querySelector(".modal");
     const backDrop = document.querySelector(".backDrop");

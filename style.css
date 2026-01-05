@@ -9,6 +9,10 @@
         "wdth" 100;
 }
 
+.logoHeader {
+    height: 75px;
+}
+
 li {
     list-style: none;
 }
@@ -356,6 +360,40 @@ h1 {
     box-shadow: 2px 2px 4px rgb(172, 150, 25);
     color: rgb(66, 66, 66);
     text-decoration: none;
+}
+
+.workTime {
+    text-align: center;
+}
+
+.contactsOncontacts {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.contactsOncontacts li a {
+    color: #252525;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.howToContactAlive {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.map {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 70px;
 }
 
 .buyList:hover {
@@ -943,11 +981,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-}
-
-.imgShowlistBuyPage {
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .imgShowlistBuyPage {

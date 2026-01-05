@@ -790,13 +790,13 @@ btnsOpenOrder.forEach((btn) => {
       <div class="backNav">
         <nav class="navigation">
           <!-- <div class="container"> -->
-          <img class="logoHeader" src="./photos/logo.png" alt="#" />
+          <img class="logoHeader" src="./photos/newLogoKashtan.jpeg" alt="#" />
           <ul class="ulNav">
             <li class="main"><a href="index.html">Головна</a></li>
             <li class="aboutUs"><a href="#">про нас</a></li>
-            <li class="prices"><a href="products.html">каталог</a></li>
-            <li class="sales"><a href="#">акції</a></li>
-            <li class="contsctsNav"><a href="#">контакти</a></li>
+            <li class="prices"><a href="./products.html">каталог</a></li>
+            <li class="sales"><a href="./buyPage.html">Продати золоті вироби</a></li>
+            <li class="contsctsNav"><a href="./contacts.html">контакти</a></li>
           </ul>
           <!-- </div> -->
         </nav>

@@ -1,7 +1,7 @@
-const buyListInside = document.querySelectorAll('.buyListInside');
+// const buyListInside = document.querySelectorAll('.buyListInside');
 
-buyListInside.forEach(btn => {
-    btn.addEventListener('click', event => {
+// buyListInside.forEach(btn => {
+//     btn.addEventListener('click', event => {
 
-    });
-});  
+//     });
+// });  
