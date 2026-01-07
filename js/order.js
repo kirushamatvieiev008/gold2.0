@@ -785,11 +785,8 @@ btnsOpenOrder.forEach((btn) => {
           <li>
             <p>© 2025. All Rights Reserved.</p>
           </li>
-          <li>
-            <ul class="inforeturn">
-              <li><a href="#">Обмін і повернення</a></li>
-              <li><a href="#">Оплата і доставка</a></li>
-            </ul>
+                    <li>
+            <img class="logoHeader" src="./photos//kashtan.png" alt="#" />
           </li>
           <li>
             <ul class="listSocmedia">
@@ -824,7 +821,7 @@ btnsOpenOrder.forEach((btn) => {
       </div>
     </footer>`;
     // console.log(btn.parentElement.index);
-    
+
     const btnOpenModal = document.querySelector(".buy");
     const modal = document.querySelector(".modal");
     const backDrop = document.querySelector(".backDrop");
@@ -899,7 +896,6 @@ buyListInnerImg.forEach((btn) => {
   });
 });
 
-
 /*
           <div class="borderImg">
             <img class="imgBuyPage" src="photos/goldTry.jpg" alt="#" />
@@ -953,25 +949,19 @@ buyListInnerImg.forEach((btn) => {
               </li>
             </ul> */
 
-            
-            // console.log('hello');
-            // import {newVariant} from './comodity.js'
-            // // console.log(newDescision);
+// console.log('hello');
+// import {newVariant} from './comodity.js'
+// // console.log(newDescision);
 
-            // console.log(newVariant);
-            
+// console.log(newVariant);
 
-            
-            
-            // // export const buyListToex = 2;
-            
-            
-            // const toPushAndMakeOrder = document.querySelector(".toPushAndMakeOrder");
-            
-            // const buyList = document.querySelectorAll(".buyList");
-            // export const newDescision = document.querySelector(".toPushAndMakeOrder");
-            // console.log(document.querySelector(".toPushAndMakeOrder"));
-            
+// // export const buyListToex = 2;
+
+// const toPushAndMakeOrder = document.querySelector(".toPushAndMakeOrder");
+
+// const buyList = document.querySelectorAll(".buyList");
+// export const newDescision = document.querySelector(".toPushAndMakeOrder");
+// console.log(document.querySelector(".toPushAndMakeOrder"));
 
 // buyList.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
@@ -981,8 +971,7 @@ buyListInnerImg.forEach((btn) => {
 //     // event.preventDefault();
 
 // toPushAndMakeOrder.innerHTML = `
-    
-    
+
 //     `;
 //   });
 // });

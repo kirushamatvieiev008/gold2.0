@@ -941,11 +941,8 @@ btnsOpenOrder.forEach((btn) => {
           <li>
             <p>© 2025. All Rights Reserved.</p>
           </li>
-          <li>
-            <ul class="inforeturn">
-              <li><a href="#">Обмін і повернення</a></li>
-              <li><a href="#">Оплата і доставка</a></li>
-            </ul>
+                    <li>
+            <img class="logoHeader" src="./photos//kashtan.png" alt="#" />
           </li>
           <li>
             <ul class="listSocmedia">
