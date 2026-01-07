@@ -610,7 +610,7 @@ btnsOpenOrder.forEach((btn) => {
       <div class="backNav">
         <nav class="navigation">
           <!-- <div class="container"> -->
-          <img class="logoHeader" src="./photos/logo.png" alt="#" />
+          <img class="logoHeader" src="./photos//kashtan.png" alt="#" />
           <ul class="ulNav">
             <li class="main"><a href="index.html">Головна</a></li>
             <li class="aboutUs"><a href="#">про нас</a></li>
