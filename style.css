@@ -319,7 +319,9 @@ h1 {
 }
 
 .imgShowlist {
-    width: 100%;
+    /* width: 100%; */
+    /* width: 280px; */
+    height: 373px;
 }
 
 .descriptionList {
@@ -1095,10 +1097,6 @@ h1 {
     /* flex-wrap: wrap; */
 }
 
-.secondItem {
-    /* padding-left: px; */
-}
-
 /* .buy {
     
 } */
@@ -1195,12 +1193,12 @@ h1 {
     transform: translateX(-50%);
     width: 250px;
     height: 70px;
-    background-color: #1a1a1a;
     border: none;
     border-radius: 40px;
+    background-color: #1a1a1a;
     box-shadow: 5px 5px 5px rgb(158, 160, 54);
-    cursor: pointer;
     color: #ecdd00;
+    cursor: pointer;
 }
 
 .buyLinks {
@@ -1500,6 +1498,50 @@ h1 {
     /* margin-bottom: 100px; */
 }
 
+.markInTenMinute:hover {
+    animation-name: animButton;
+    animation-timing-function: ease-in;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes animButton {
+    0% {
+        background-color: #1a1a1a;
+        box-shadow: 5px 5px 5px rgb(158, 160, 54);
+        color: #ecdd00;
+        outline: solid 1px #ecdd00;
+    }
+
+    100% {
+        background-color: #ecdd00;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        color: #1a1a1a;
+        outline: solid 1px rgb(56, 56, 56);
+    }
+}
+
+.pitureToDescription {
+    width: 200px;
+}
+
+.monet {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.ring {
+    width: 170px;
+    position: absolute;
+    
+}
+
+.centsAndOthers {
+    position: relative;
+}
 
 /* 
 .buyListInnerImg:hover {
